@@ -1,0 +1,38 @@
+[
+    {
+        "question": "What is 2 + 5?",
+        "answer": [
+            {"option": "4", "correct": false},
+            {"option": "6", "correct": false},
+            {"option": "10", "correct": false},
+            {"option": "7", "correct": true}
+        ]
+    },
+    {
+        "question": "Who is the main vocalist of the song ‘Girls Like You’?",
+        "answer": [
+            {"option": "Adam Levine", "correct": true},
+            {"option": "Justin Timberlake", "correct": false},
+            {"option": "Justin Bieber", "correct": false},
+            {"option": "Khalid", "correct": false}
+        ]
+    },
+    {
+        "question": "When was the first World War fought?",
+        "answer": [
+            {"option": "1929", "correct": false},
+            {"option": "1912", "correct": false},
+            {"option": "1914", "correct": true},
+            {"option": "1930", "correct": false}
+        ]
+    },
+    {
+        "question": "How many bones are there in the human body?",
+        "answer": [
+            {"option": "201", "correct": false},
+            {"option": "206", "correct": true},
+            {"option": "301", "correct": false},
+            {"option": "208", "correct": false}
+        ]
+    }
+]
