@@ -38,7 +38,6 @@ const Login = () => {
         JSON.stringify({ name: data.user.name, token: data.token })
       );
       navigate("/questions");
-      console.log(data.token);
     } catch (error: any) {
       dispatch(logError(error.response.data.msg));
       console.log(error);
@@ -63,14 +62,14 @@ const Login = () => {
           />
           <label htmlFor="name">Password</label>
           <input
-            type="text"
+            type="password"
             name="password"
             value={userData.password}
             onChange={handleChange}
             className="bg-[#9dbbae] rounded text-white mb-5 mt-1 p-1"
           />
           <button type="submit" className="text-xl mb-6">
-            {isLoading ? "Granting access" : "Login"}
+            {isLoading ? "Granting access..." : "Login"}
           </button>
         </form>
 

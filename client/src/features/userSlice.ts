@@ -34,14 +34,15 @@ const UserSlice = createSlice({
       state.isLoading = false;
     },
     loginUser: (state, action) => {
-      const { user, token } = action.payload;
-      state.user = user;
+      const { name, token } = action.payload;
+      state.user = name;
       state.token = token;
       state.isLoading = false;
     },
     getQuestions: (state, action) => {
       state.questions = action.payload;
       state.startQuiz = true;
+      state.isLoading = false;
     },
     logError: (state, action) => {
       state.errMsg = action.payload;
@@ -51,6 +52,9 @@ const UserSlice = createSlice({
       state.questions = [];
       state.startQuiz = false;
       state.isLoading = false;
+      state.user = null;
+      state.token = null;
+      state.errMsg = null;
     },
   },
 });

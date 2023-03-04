@@ -1,11 +1,11 @@
 [
     {
-        "question": "What is 2 + 5?",
+        "question": "At the time of writing (December 2022) how many episodes of The Simpsons are there?",
         "answer": [
-            {"option": "4", "correct": false},
-            {"option": "6", "correct": false},
-            {"option": "10", "correct": false},
-            {"option": "7", "correct": true}
+            {"option": "300", "correct": false},
+            {"option": "542", "correct": false},
+            {"option": "234", "correct": false},
+            {"option": "738", "correct": true}
         ]
     },
     {
@@ -33,6 +33,60 @@
             {"option": "206", "correct": true},
             {"option": "301", "correct": false},
             {"option": "208", "correct": false}
+        ]
+    },
+    {
+        "question": "Which planet is closest to the sun?",
+        "answer": [
+            {"option": "Venus", "correct": false},
+            {"option": "Mercury", "correct": true},
+            {"option": "Mars", "correct": false},
+            {"option": "Jupiter", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the name of the school in Sex Education?",
+        "answer": [
+            {"option": "The Gunnery School ", "correct": false},
+            {"option": "Moordale High", "correct": true},
+            {"option": "Whitney High School", "correct": false},
+            {"option": "St. Johnsbury Academy ", "correct": false}
+        ]
+    },
+    {
+        "question": "What does LGBTQ stand for?",
+        "answer": [
+            {"option": "Lesbian, gay, biracial, transgender and queen", "correct": false},
+            {"option": "Lesbian, gay, bisexual, transgender, and questioning (or queer)", "correct": true},
+            {"option": "Lesbian, gay, bisexual, trans, and quail", "correct": false},
+            {"option": "Lesbian, gay, bisexual, transitioning, and questioning", "correct": false}
+        ]
+    },
+    {
+        "question": "What did Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams collectively create?",
+        "answer": [
+            {"option": "Twitter", "correct": true},
+            {"option": "LinkedIn", "correct": false},
+            {"option": "The Godfather", "correct": false},
+            {"option": "Raiders of the Lost Ark", "correct": false}
+        ]
+    },
+    {
+        "question": "What was the most streamed show on Netflix in 2020?",
+        "answer": [
+            {"option": "Game of Thrones", "correct": false},
+            {"option": "Stranger Things", "correct": false},
+            {"option": "The Umbrella Academy season 2, with 43million streams", "correct": true},
+            {"option": "Orange Is the New Black", "correct": false}
+        ]
+    },
+    {
+        "question": "What does Hakuna Matata mean?",
+        "answer": [
+            {"option": "Don't be alarmed", "correct": false},
+            {"option": "It's a beautiful day", "correct": false},
+            {"option": "Thank you lord!", "correct": false},
+            {"option": "No Worries!", "correct": true}
         ]
     }
 ]

@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 require("express-async-errors");
+const path = require("path");
 
 const app = express();
 const authRouter = require("./routes/auth");
@@ -10,12 +11,18 @@ const questionsRouter = require("./routes/questions");
 const errorHandlerMiddleware = require("./middleware/errorHandler");
 const notFound = require("./middleware/not-found");
 const connectDB = require("./db/connect");
+const { join } = require("path");
 
 app.use(cors());
 app.use(express.json());
 
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/", userAuth, questionsRouter);
+
+app.use(express.static(path, join(__dirname, "./client/dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/dist/index.html"));
+});
 
 app.use(errorHandlerMiddleware);
 app.use(notFound);

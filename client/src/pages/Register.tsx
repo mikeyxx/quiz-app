@@ -73,14 +73,14 @@ const Register = () => {
           />
           <label htmlFor="name">Password</label>
           <input
-            type="text"
+            type="password"
             name="password"
             value={userData.password}
             onChange={handleChange}
             className="bg-[#9dbbae] rounded text-white mb-5 mt-1 p-1"
           />
           <button type="submit" className="text-xl mb-2">
-            {isLoading ? "Creating new user" : "Submit"}
+            {isLoading ? "Creating new user..." : "Submit"}
           </button>
         </form>
         <span className="m-1 text-red-600">{errMsg}</span>
