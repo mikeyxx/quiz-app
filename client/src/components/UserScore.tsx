@@ -23,8 +23,8 @@ const UserScore = ({ score }: Props) => {
   };
 
   return (
-    <div className="max-w-lg w-full flex flex-col justify-center items-center max-h-80 h-full">
-      <div className="bg-white flex flex-col items-center justify-center w-full h-full gap-6 text-2xl p-6">
+    <div className="max-w-lg w-full flex flex-col justify-center items-center max-h-80 h-full p-3">
+      <div className="bg-white flex flex-col items-center justify-center w-full h-full gap-6 text-2xl p-6 rounded">
         <span>🎉</span>
         <span>
           You scored: {score}/{questions.length}

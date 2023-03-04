@@ -68,13 +68,18 @@ const Question = () => {
   }, [count, handleClick]);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center h-screen p-3">
       {showScore ? (
         <UserScore score={score} />
       ) : (
         <div className="bg-white max-w-lg w-full min-h-[300px] flex flex-col items-center justify-center rounded  p-5">
-          <div className="bg-[#188FA7] h-16 w-16 flex justify-center items-center rounded mb-14">
-            <span className="text-white font-bold text-5xl">Q</span>
+          <div className="flex justify-center items-center rounded mb-14 gap-2">
+            <div className="bg-[#188FA7] h-10 w-10 flex justify-center items-center rounded">
+              <span className="text-white font-bold text-3xl">Q</span>
+            </div>
+            <span className="font-bold font-0 text-[#188FA7] text-xl">
+              Smarty Pants
+            </span>
           </div>
           <div className="text-center w-full">
             {questions?.map((ques, index) => {
