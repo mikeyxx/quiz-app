@@ -28,14 +28,11 @@ const Register = () => {
     e.preventDefault();
     dispatch(setLoading());
     try {
-      const { data } = await axios.post(
-        `${import.meta.env.VITE_APP_REGISTER_API}`,
-        {
-          name,
-          email,
-          password,
-        }
-      );
+      const { data } = await axios.post(`/api/v1/auth/register`, {
+        name,
+        email,
+        password,
+      });
       dispatch(createUser({ name: data.user.name }));
       navigate("/login");
     } catch (error: any) {

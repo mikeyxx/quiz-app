@@ -28,7 +28,7 @@ const Login = () => {
     const { email, password } = userData;
     dispatch(setLoading());
     try {
-      const { data } = await axios.post(import.meta.env.VITE_APP_LOGIN_API, {
+      const { data } = await axios.post(`/api/v1/auth/login`, {
         email,
         password,
       });

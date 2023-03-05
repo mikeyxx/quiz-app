@@ -9,7 +9,7 @@ const StartPage = () => {
   const fetchQuestions = async () => {
     dispatch(setLoading());
     try {
-      const { data } = await axios.get(import.meta.env.VITE_APP_QUESTIONS_API, {
+      const { data } = await axios.get("/api/v1/questions", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
