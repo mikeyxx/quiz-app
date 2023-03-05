@@ -22,22 +22,24 @@ const Register = () => {
       [name]: value,
     });
   };
+  const { name, email, password } = userData;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     dispatch(setLoading());
-    const { name, email, password } = userData;
     try {
-      const { data } = await axios.post(import.meta.env.VITE_APP_REGISTER_API, {
-        name,
-        email,
-        password,
-      });
+      const { data } = await axios.post(
+        `${import.meta.env.VITE_APP_REGISTER_API}`,
+        {
+          name,
+          email,
+          password,
+        }
+      );
       dispatch(createUser({ name: data.user.name }));
       navigate("/login");
     } catch (error: any) {
-      dispatch(logError(error));
-      console.log(error);
+      dispatch(logError(error.response.data.err));
     }
     setUserData({
       ...userData,

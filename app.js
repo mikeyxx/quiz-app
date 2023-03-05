@@ -13,8 +13,12 @@ const errorHandlerMiddleware = require("./middleware/errorHandler");
 const notFound = require("./middleware/not-found");
 const connectDB = require("./db/connect");
 
-app.use(cors());
 app.use(express.json());
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "https://smartypants.cyclic.app"],
+  })
+);
 
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/", userAuth, questionsRouter);
