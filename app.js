@@ -21,10 +21,7 @@ app.use("/api/v1/", userAuth, questionsRouter);
 
 app.use(express.static(path.join(__dirname, "./client/dist")));
 app.get("*", (req, res) => {
-  var filePath = "./client/dist/index.html";
-  var resolvedPath = path.resolve(filePath);
-  console.log(resolvedPath);
-  return res.sendFile(resolvedPath);
+  res.sendFile(path.join(__dirname, "./client/dist/index.html"));
 });
 
 app.use(errorHandlerMiddleware);
