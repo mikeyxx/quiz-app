@@ -23,8 +23,8 @@ const UserScore = ({ score }: Props) => {
   };
 
   return (
-    <div className="max-w-lg w-full flex flex-col justify-center items-center max-h-80 h-full p-3">
-      <div className="bg-white flex flex-col items-center justify-center w-full h-full gap-6 text-2xl p-6 rounded">
+    <main className="max-w-lg w-full flex flex-col justify-center items-center max-h-80 h-full p-3">
+      <section className="bg-white flex flex-col items-center justify-center w-full h-full gap-6 text-2xl p-6 rounded">
         <span>🎉</span>
         <span>
           You scored: {score}/{questions.length}
@@ -36,8 +36,8 @@ const UserScore = ({ score }: Props) => {
         >
           Reset
         </button>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

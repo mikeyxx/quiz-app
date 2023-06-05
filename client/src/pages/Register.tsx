@@ -47,16 +47,16 @@ const Register = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen p-3">
+    <main className="flex flex-col items-center justify-center h-screen p-3">
       <div className="bg-white max-w-lg w-full flex flex-col justify-center items-center p-7 rounded">
-        <div className="flex justify-center items-center rounded mb-14 gap-2">
+        <header className="flex justify-center items-center rounded mb-14 gap-2">
           <div className="bg-[#188FA7] h-10 w-10 flex justify-center items-center rounded">
             <span className="text-white font-bold text-3xl">Q</span>
           </div>
           <span className="font-bold font-0 text-[#188FA7] text-xl">
             Smarty Pants
           </span>
-        </div>
+        </header>
         <span className="text-2xl mt-3">Register</span>
         <form className="flex flex-col w-full" onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
@@ -94,7 +94,7 @@ const Register = () => {
           </p>
         </Link>
       </div>
-    </div>
+    </main>
   );
 };
 
